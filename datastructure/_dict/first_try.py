@@ -40,3 +40,11 @@ print('salad' not in dishes)
 
 dishes["bacon"]= 9
 print(dishes)
+
+#sorting
+print(sorted(dishes))
+print(sorted(dishes,key=dishes.get)) 
+
+#list comprehension
+new_dishes = {x:dishes[x]+2 for x in dishes}
+print(new_dishes)
