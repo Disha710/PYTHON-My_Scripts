@@ -1,0 +1,35 @@
+{
+  "name": "Frieda",
+  "isDog": true,
+  "Hobbies": [
+    "eating",
+    "sleeping",
+    "barking"
+  ],
+  "age": 8,
+  "other": {
+    "work": null,
+    "home": [
+      "street",
+      "India"
+    ]
+  },
+  "friends": [
+    {
+      "name": "phi",
+      "Hobbies": [
+        "eating",
+        "sleeping",
+        "barking"
+      ]
+    },
+    {
+      "name": "Mit",
+      "Hobbies": [
+        "eating",
+        "sleeping",
+        "barking"
+      ]
+    }
+  ]
+}
