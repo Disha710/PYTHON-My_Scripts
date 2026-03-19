@@ -1,0 +1,43 @@
+1. import:
+  1.__import__()
+  2.importlib.import_moduee() : provided devloper friendly API
+
+2.Packages: way of organizing modelr(directories)
+  module is file and package is folder
+   All packages are modules, but not all modules are packages
+A module is a package if it has a __path__ attribute
+
+
+3. __init__.py: when imported automatically executed
+ 4. namspace packages : no __init__ required.
+    package belongs to large work space user see main.
+    but  main.onesecod_repo, main.tird_repo ,can be work independetly
+
+
+ 5. Search startegy:
+   1. check cache(sys.module): A dictionary (cache)
+   2.Hierarchy : foo.bar.baz chechs foo >>bar>>.baz
+
+6. If module not in cache
+  1.finder :  core part of Python (like sys),return None if not found
+      a. build in finder
+          module.__spec__ :name, loader, origin, submodule locations, etc
+      b. Frozen finder: pre-packe
+      c, Path-based finder sys.path: It walks through your folders (sys.path)
+      last : module.__spec__ :name, loader, origin, submodule locations, etc
+  
+  2.Loaders: A dictionary (cache)
+
+  3.importer
+
+
+7, Package relative import
+ .module =current package
+ ..module = parent package
+ ...module = grandparent package
+
+8. __main__ 
+  1. main script runing is __name__ = __main__
+  2.__main__.__spec__ : where files comes from
+     1. module command : python -m my_script
+     2. file command : python -m my_script.py
