@@ -1,0 +1,16 @@
+{
+  "name": [
+    "ccrs",
+    "ccrm",
+    "ccb",
+    "cprs"
+  ],
+  "count": 10,
+  "recording": "x.rrec",
+  "result": {
+    "ccrs": "Pass",
+    "ccrm": "Fail",
+    "ccb": "Pass",
+    "cprs": null
+  }
+}
