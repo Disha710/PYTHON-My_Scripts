@@ -90,6 +90,15 @@ with open("source.txt") as src, open("dest.txt", "w") as dest:
     dest.write(content)
     
 #6 match statement : pattern matching
+#An if statement usually just checks x == y.
+#A match statement can check the structure
+  #Is this a list? Does it have two items? Is the first item a string?
+"""
+tries to  Exact Match
+y,name: (100,y) = I don't care what the second part is. Whatever it is, I'll name it y
+wildcar case _: doenot matter it its matches
+This is a special symbol that means "match anything, but don't bother saving the value
+"""
 
 flag = False
 match (100, 200):
@@ -126,3 +135,23 @@ match command.split():
         print(f"Picking up the {item}")
     case _:
         print("Unknown command!")
+        
+        
+        
+'''
+x (Capture): Matches everything AND creates a variable.
+_ (Wildcard): Matches everything BUT creates nothing.
+
+'''
+
+point = (10, 20)
+match point:
+    case (x, y):
+        print(f"Moving to coordinates: {x} and {y}")
+        
+point = (10, 20)
+match point:
+    case (_, _):
+        print("I found a point, but the specific numbers don't matter to me.")
+
+
